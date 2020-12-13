@@ -1,0 +1,35 @@
+
+<div id="searchSection">  
+    <div id="searchBox">
+    <label style="font-weight: 500;">Search Order</label>
+    <div style="margin:15px">
+        <select  id="searchPeriod" matNativeControl required style="margin-left: 0;">
+            <option value="All Time">All Time</option>
+            <option value="7 Days">Last 7 Days</option>
+            <option value="Today">Today</option>
+           
+          </select>
+          <input matInput placeholder="Enter search item" id="searchItem" type="text"  style="margin-left: 15px;">
+          <button  mat-raised-button color="primary" style="margin-left: 25px;background-color: #4a4574;color: white;" (click)="onSearchSubmit()">Search</button>
+    </div>
+    </div>
+</div>
+
+
+<style>
+   
+    #searchSection{
+        margin-top: 10px;
+        
+        width:100%;
+    }
+    #searchBox{
+        background-color: whitesmoke;
+        width: 50%;
+        height: 80px;
+        border: 3px solid blueviolet;
+         padding: 50px;
+         margin: 20px;
+    }
+  
+</style>

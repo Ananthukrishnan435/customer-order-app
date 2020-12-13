@@ -1,0 +1,51 @@
+<div id="topSection">  
+    <div id="addOrder">
+    <label style="font-weight: 500;">Add New Order</label>
+<div style="display: grid;margin: 15px;">
+ <div>
+    <mat-label style="font-size: 15px;">User  </mat-label>
+ 
+    <select id ="userField" matNativeControl required style="margin-left: 50px;">
+      <option value="User A">User A</option>
+      <option value="saab">User B</option>
+      <option value="User B">User C</option>
+      <option value="User D">User D</option>
+    </select>
+</div>
+<div style="margin-top:10px">
+    <mat-label style="font-size: 15px;">Product  </mat-label>
+    <select id ="itemField" matNativeControl required style="margin-left: 27px;">
+        <option value="Fanta">Fanta</option>
+        <option value="Pepsi">Pepsi</option>
+        <option value="Cola">Cola</option>
+        <option value="Sprite">Sprite</option>
+      </select>
+</div>
+<div style="margin-top:10px">
+    <mat-label style="font-size: 15px;">Quantity  </mat-label>
+    <input  id ="quantityField" matInput placeholder="1"  type="number"  min="1" style="margin-left: 23px;">
+</div>
+<div style="margin:25px">
+    <button  mat-raised-button color="primary" style="background-color: #4a4574;color: white;" (click)="onAddSubmit()">Add</button>
+</div>
+</div>
+    </div>
+</div>
+
+<style>
+   
+    #topSection{
+        margin-top: 10px;
+        
+        width:100%;
+    }
+    #addOrder{
+        background-color: whitesmoke;
+        width: 50%;
+        height: 150px;
+        border: 3px solid blueviolet;
+         padding: 50px;
+         margin: 20px;
+    }
+  
+</style>

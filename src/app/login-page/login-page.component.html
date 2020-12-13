@@ -1,0 +1,49 @@
+<div id="loginbody" >
+
+    <div id="loginHolder">
+        <div style="margin-top: 20px;color: darkblue;">
+        <label>Login</label>
+        </div>
+        <form class="example-form">
+        <div class="FieldStyle">
+            <app-email-field></app-email-field>
+        </div>
+        <div class="FieldStyle">
+            <app-password-field></app-password-field>
+        </div>
+        <div  class="FieldStyle">
+        <app-login-button (submitLogin)="onSubmitLogin($event)"></app-login-button>
+        </div>
+        </form>
+    </div>
+    </div>
+    
+    <style>
+        #loginbody{
+            width: 100%;
+            height:100%;
+           background-color: #231c64;
+            overflow: auto;
+        }
+        #loginHolder{
+          
+            margin-top: 5%;
+            margin-left: 35%;
+            height: 380px;
+            width: 380px;
+            opacity: 80%;
+            background-color:#7088bb;
+            position: absolute;  
+            text-align:center;
+            font-size:x-large
+    
+        }
+        .FieldStyle{
+           
+            margin-top: 50px;
+            width: 100%;
+            color:darkblue;
+    
+        }
+        
+    </style>

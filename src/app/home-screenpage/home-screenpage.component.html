@@ -1,0 +1,11 @@
+<div>
+    <section> <app-homepage-header></app-homepage-header></section>
+    <section>   <app-home-page-top-section (submitDetails)="onSubmitDetails($event)"></app-home-page-top-section></section>
+     <section>   <app-search-box (submitFilter)="onSubmitFilter($event)"></app-search-box ></section>
+     <section> 
+         <label style="font-weight: 500;font-size: 25px;">Order List</label>
+           <app-order-grid *ngIf="showGrid" [data]="data"></app-order-grid> 
+     </section>
+     <!-- <section> <app-homepage-footer> </app-homepage-footer></section> -->
+ </div>
+ 
